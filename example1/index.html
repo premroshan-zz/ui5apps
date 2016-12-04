@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <title>My First App</title>
+        <script id="sap-ui-bootstrap"
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+                data-sap-ui-theme="sap_bluecrystal"
+        data-sap-ui-libs="sap.m"></script>
+        <script>
+            sap.ui.getCore().attachInit( function(){
+                var oImage = new sap.m.Image();
+                oImage.setSrc("http://openui5.org/resources/OpenUI5_logo_only.png");
+                oImage.setDecorative(false);
+                oImage.setAlt("SAPUI5 Logo");
+                oImage.placeAt("content");
+            });
+        </script>
+    </head>
+    <body class="sapUiBody" id="content">
+    </body>
+</html>
